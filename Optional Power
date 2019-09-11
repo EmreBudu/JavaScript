@@ -1,0 +1,11 @@
+function optionalPower(a, b) {
+	var result = 1;
+	if(b == undefined)
+		b = 2;
+	for(var i=1; i<=b; i++) {
+		result = result * a;
+	}
+	return result;
+}
+
+console.log(optionalPower(3,3));
