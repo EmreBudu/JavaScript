@@ -29,4 +29,4 @@ class Presentational extends React.Component {
 };
 
 const connect = ReactRedux.connect;
-const ConnectedComponent = (mapStateToProps, mapDispatchToProps)(Presentational);
+const ConnectedComponent = connect(mapStateToProps, mapDispatchToProps)(Presentational);
